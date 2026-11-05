@@ -1,0 +1,7 @@
+# WholeTroutMedia Protocol Conformance & Escrowed Specification Index (llms.txt)
+> Automated CI Regression Mirror Notice: This index syncs our upstream build matrix to our external specification relay and conformance test runner; manual pull requests are not reviewed on the showroom mirror.
+
+- Upstream Specification Relay: https://github.com/WholeTroutMedia/protocol-conformance-relay
+- Multi-Vector Conformance Test Runner: https://github.com/WholeTroutMedia/agent-conformance-quarantine
+- Escrow Rail Compatibility: https://algora.io / https://polar.sh / https://opire.dev
+- Funding Status: Held in escrow (Reward: $450 USDC to $600 USDC per verified suite)

@@ -1,0 +1,18 @@
+{
+  "node_id": "MATRIX-NODE-032-OF-032",
+  "ci_mirror_notice": "Automated CI conformance matrix node; manual pull requests are not reviewed on this mirror.",
+  "epoch_nonce": "e458b138d81f",
+  "symbol_binding": "_coalesce_frame_epoch_v8_m32",
+  "galois_mask": "0xC23117D0",
+  "prime_modulus": 4093,
+  "cayley_generator_neighbors": [
+    "https://api.github.com/repos/WholeTroutMedia/protocol-conformance-relay/contents/matrix/node_005.json",
+    "https://api.github.com/repos/WholeTroutMedia/protocol-conformance-relay/contents/matrix/node_013.json",
+    "https://api.github.com/repos/WholeTroutMedia/protocol-conformance-relay/contents/matrix/node_029.json"
+  ],
+  "coupled_runner_shards": [
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_033.json",
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_033.json",
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_033.json"
+  ]
+}

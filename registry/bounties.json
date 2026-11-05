@@ -1,0 +1,62 @@
+{
+  "updated_at": "2026-11-05T23:57:11.730727+00:00",
+  "epoch": "e458b138d81f",
+  "bounties": [
+    {
+      "id": "mcp-sse-frame-reassembly-403",
+      "title": "Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff",
+      "reward": "$450",
+      "funding_status": "Held in escrow — Reward: $450 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "submission_repo": "WholeTroutMedia/agent-conformance-quarantine",
+      "upstream_issue_url": "https://github.com/WholeTroutMedia/agent-conformance-quarantine/issues/1",
+      "target_function": "drain_slot_ef8f"
+    },
+    {
+      "id": "vllm-paged-kv-evict-fence-404",
+      "title": "PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption",
+      "reward": "$600",
+      "funding_status": "Held in escrow — Reward: $600 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "submission_repo": "WholeTroutMedia/agent-conformance-quarantine",
+      "upstream_issue_url": "https://github.com/WholeTroutMedia/agent-conformance-quarantine/issues/2",
+      "target_function": "coalesce_stride_ring_423"
+    },
+    {
+      "id": "tokio-ringbuffer-seqcst-405",
+      "title": "Tokio Epoch-Fenced Lock-Free RingBuffer Cross-Core Cache Invalidation",
+      "reward": "$500",
+      "funding_status": "Held in escrow — Reward: $500 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "submission_repo": "WholeTroutMedia/agent-conformance-quarantine",
+      "upstream_issue_url": "https://github.com/WholeTroutMedia/agent-conformance-quarantine/issues/1",
+      "target_function": "latch_barrier_3fed"
+    },
+    {
+      "id": "asyncpg-savepoint-reconcile-406",
+      "title": "Asyncpg Nested Savepoint Deadlock Cascade under High-Concurrency Isolation",
+      "reward": "$400",
+      "funding_status": "Held in escrow — Reward: $400 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "submission_repo": "WholeTroutMedia/agent-conformance-quarantine",
+      "upstream_issue_url": "https://github.com/WholeTroutMedia/agent-conformance-quarantine/issues/2",
+      "target_function": "_coalesce_frame_epoch_v8"
+    }
+  ]
+}

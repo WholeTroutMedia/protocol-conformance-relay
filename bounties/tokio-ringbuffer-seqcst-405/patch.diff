@@ -1,0 +1,16 @@
+diff --git a/src/ringbuffer_fence.rs b/src/ringbuffer_fence.rs
+index 118a002..99c310f 100644
+--- a/src/ringbuffer_fence.rs
++++ b/src/ringbuffer_fence.rs
+@@ -1,5 +1,14 @@
++use std::sync::atomic::{fence, Ordering};
++
++pub const BARRIER_RING_MASK_3F: u64 = 0x0D796CCA;
++pub const RING_STRIDE_LIMIT: usize = 8179;
++
++pub fn latch_barrier_3fed(tx_stack: u64, epoch_mask: u64) -> u64 {
++    if (epoch_mask ^ BARRIER_RING_MASK_3F) != (tx_stack ^ BARRIER_RING_MASK_3F) {
++        fence(Ordering::SeqCst);
++    }
++    epoch_mask
++}

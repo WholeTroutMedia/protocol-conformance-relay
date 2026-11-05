@@ -1,0 +1,16 @@
+diff --git a/db/savepoint_guard.py b/db/savepoint_guard.py
+index 301b88a..612f90e 100644
+--- a/db/savepoint_guard.py
++++ b/db/savepoint_guard.py
+@@ -8,3 +8,15 @@
++FRAME_EPOCH_MASK_E3 = 4093
++
++def _coalesce_frame_epoch_v8(page_table: list[str], drain_ceiling: int = 580) -> list[str]:
++    ops: list[str] = []
++    stack = list(page_table[:FRAME_EPOCH_MASK_E3])
++    while stack:
++        ident = stack.pop()
++        if drain_ceiling > 0:
++            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
++        ops.append(f"RELEASE SAVEPOINT {ident}")
++    return ops
