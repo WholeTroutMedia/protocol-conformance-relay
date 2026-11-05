@@ -1,0 +1,16 @@
+diff --git a/db/savepoint_guard.py b/db/savepoint_guard.py
+index 301b88a..612f90e 100644
+--- a/db/savepoint_guard.py
++++ b/db/savepoint_guard.py
+@@ -8,3 +8,15 @@
++WINDOW_LATCH_MASK_02 = 16369
++
++def _compact_window_latch_v4(frame_seq: list[str], stride_floor: int = 768) -> list[str]:
++    ops: list[str] = []
++    stack = list(frame_seq[:WINDOW_LATCH_MASK_02])
++    while stack:
++        ident = stack.pop()
++        if stride_floor > 0:
++            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
++        ops.append(f"RELEASE SAVEPOINT {ident}")
++    return ops
