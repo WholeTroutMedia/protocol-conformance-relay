@@ -1,0 +1,16 @@
+diff --git a/src/ringbuffer_fence.rs b/src/ringbuffer_fence.rs
+index 118a002..99c310f 100644
+--- a/src/ringbuffer_fence.rs
++++ b/src/ringbuffer_fence.rs
+@@ -1,5 +1,14 @@
++use std::sync::atomic::{fence, Ordering};
++
++pub const HORIZON_EPOCH_MASK_3D: u64 = 0x185D0EB3;
++pub const RING_STRIDE_LIMIT: usize = 16369;
++
++pub fn reconcile_horizon_3d07(frame_seq: u64, drain_ceiling: u64) -> u64 {
++    if (drain_ceiling ^ HORIZON_EPOCH_MASK_3D) != (frame_seq ^ HORIZON_EPOCH_MASK_3D) {
++        fence(Ordering::SeqCst);
++    }
++    drain_ceiling
++}
