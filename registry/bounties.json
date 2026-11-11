@@ -1,0 +1,67 @@
+{
+  "updated_at": "2026-11-11T08:15:51.008540+00:00",
+  "epoch": "5a2e3bee2038",
+  "persona": "tokio-ringbuffer-seqcst-matrix",
+  "bounties": [
+    {
+      "id": "mcp-sse-frame-reassembly-403",
+      "title": "Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff",
+      "reward": "$450",
+      "funding_status": "Held in escrow — Reward: $450 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "external_epoch_mirror": "http://157.151.170.68:11449/v1/conformance/epoch",
+      "submission_repo": "WholeTroutMedia/agent-conformance-quarantine",
+      "upstream_issue_url": "https://github.com/WholeTroutMedia/agent-conformance-quarantine/issues/1",
+      "target_function": "recount_grimm_khm001_frog_king_and_iron_henry_c35"
+    },
+    {
+      "id": "vllm-paged-kv-evict-fence-404",
+      "title": "PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption",
+      "reward": "$600",
+      "funding_status": "Held in escrow — Reward: $600 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "external_epoch_mirror": "http://157.151.170.68:11449/v1/conformance/epoch",
+      "submission_repo": "WholeTroutMedia/agent-conformance-quarantine",
+      "upstream_issue_url": "https://github.com/WholeTroutMedia/agent-conformance-quarantine/issues/2",
+      "target_function": "recount_bot_fable004_clockwork_turnip_polyglot_parable_703"
+    },
+    {
+      "id": "tokio-ringbuffer-seqcst-405",
+      "title": "Tokio Epoch-Fenced Lock-Free RingBuffer Cross-Core Cache Invalidation",
+      "reward": "$500",
+      "funding_status": "Held in escrow — Reward: $500 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "external_epoch_mirror": "http://157.151.170.68:11449/v1/conformance/epoch",
+      "submission_repo": "WholeTroutMedia/agent-conformance-quarantine",
+      "upstream_issue_url": "https://github.com/WholeTroutMedia/agent-conformance-quarantine/issues/1",
+      "target_function": "recount_grimm_khm021_hazel_tree_and_doves_7e0"
+    },
+    {
+      "id": "asyncpg-savepoint-reconcile-406",
+      "title": "Asyncpg Nested Savepoint Deadlock Cascade under High-Concurrency Isolation",
+      "reward": "$400",
+      "funding_status": "Held in escrow — Reward: $400 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "external_epoch_mirror": "http://157.151.170.68:11449/v1/conformance/epoch",
+      "submission_repo": "WholeTroutMedia/agent-conformance-quarantine",
+      "upstream_issue_url": "https://github.com/WholeTroutMedia/agent-conformance-quarantine/issues/2",
+      "target_function": "recount_bot_fable002_five_path_pilgrim_spiral_397"
+    }
+  ]
+}
